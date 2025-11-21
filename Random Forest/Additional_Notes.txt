@@ -1,0 +1,26 @@
+1. Explain Bagging and Boosting methods. How is it different from each other.
+--> Bagging- i] Train several models independently on random subsets of data then combine their predictions.
+ii] Training data is split into random subsets
+iii] A weak learner is split into random subsets 
+iv] majority vote
+
+Boosting - i] Train models Sequentially, where each new model tries to fix the mistakes of previous one.
+ii] Start With equal weight
+iii] First weak learner is trained.. it makes errors. Next learner is trained with more focus on misclassified points.
+
+Difference- i] Training style - bagging have parallel style and boosting have Sequential training style.
+ii] Main Goal  - bagging Reduce Variance and boosting reduce bias and Variance too.
+iii] data sampling - bagging have bootstrap sampling and boosting have full dataset with reweighted samples
+iv] combination - bagging do majority vote and boosting do weighted vote
+
+
+
+
+
+2. Explain how to handle imbalance in the data.
+ --> i] resampling the data - oversampling, under sampling
+ii] Use Class Weight 
+iii] Use proper Evaluation Metric
+iv] Generate more data
+ 
+
